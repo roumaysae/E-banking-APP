@@ -19,10 +19,13 @@ public class bankAccount {
     private String id;
     private double balance;
     private Date createdDate;
+
+    @Enumerated(EnumType.STRING)
     private AccountStatus status;
+
     @ManyToOne
     private Customer customer;//cle etrangere  refere à un cle primaire de la class Customer
-    @OneToMany(mappedBy = "bankAccount")
+    @OneToMany(mappedBy = "bankAccount",fetch = FetchType.EAGER)
     private List<AccountOperation> operationList;
 
 }
