@@ -48,29 +48,6 @@ public class EbankingAppApplication {
                     }
                 });
             });
-
-//            bankAccount bankaccount =
-//                    bankAccountRepository.findById("2032e19b-e77c-428a-90f1-3aad87be141c").get();
-//            if (bankaccount != null) {
-//                System.out.println("*******************bank account details");
-//                System.out.println(bankaccount.getId());
-//                System.out.println(bankaccount.getBalance());
-//                System.out.println(bankaccount.getStatus());
-//                System.out.println(bankaccount.getCreatedDate());
-//                System.out.println(bankaccount.getCustomer().getName());
-//                System.out.println(bankaccount.getClass().getSimpleName());//le nom de la classe de ce compte soit current soit saving
-//                if (bankaccount instanceof CurrentAccount) {
-//                    System.out.println("Over draft of currentAccount" + ((CurrentAccount) bankaccount).getOverdraft());
-//                } else if (bankaccount instanceof SavingAccount) {
-//                    System.out.println("Interest rate of SavingAccount" + ((SavingAccount) bankaccount).getInterestRate());
-//                }
-//                bankaccount.getOperationList().forEach(ops -> {
-//                    System.out.println("operations list ");
-//                    System.out.println(ops.getType());
-//                    System.out.println(ops.getAmount());
-//                    System.out.println(ops.getOperationDate());
-//                });
-//
 };
     }
    // @Bean
@@ -116,6 +93,30 @@ customerRepository.findAll().forEach(customer -> {
 //        operationRepository.save(accountOperation);
 //    }
 //});
+
+//            bankAccount bankaccount =
+//                    bankAccountRepository.findById("2032e19b-e77c-428a-90f1-3aad87be141c").get();
+//            if (bankaccount != null) {
+//                System.out.println("*******************bank account details");
+//                System.out.println(bankaccount.getId());
+//                System.out.println(bankaccount.getBalance());
+//                System.out.println(bankaccount.getStatus());
+//                System.out.println(bankaccount.getCreatedDate());
+//                System.out.println(bankaccount.getCustomer().getName());
+//                System.out.println(bankaccount.getClass().getSimpleName());//le nom de la classe de ce compte soit current soit saving
+//                if (bankaccount instanceof CurrentAccount) {
+//                    System.out.println("Over draft of currentAccount" + ((CurrentAccount) bankaccount).getOverdraft());
+//                } else if (bankaccount instanceof SavingAccount) {
+//                    System.out.println("Interest rate of SavingAccount" + ((SavingAccount) bankaccount).getInterestRate());
+//                }
+//                bankaccount.getOperationList().forEach(ops -> {
+//                    System.out.println("operations list ");
+//                    System.out.println(ops.getType());
+//                    System.out.println(ops.getAmount());
+//                    System.out.println(ops.getOperationDate());
+//                });
+//
+
         };
     }
 
