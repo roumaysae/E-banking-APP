@@ -82,17 +82,6 @@ customerRepository.findAll().forEach(customer -> {
     savingAccount.setInterestRate(5.5);
     bankAccountRepository.save(savingAccount);
 });
-//
-//bankAccountRepository.findAll().forEach(bankAccount -> {
-//    for (int i = 0; i < 10; i++) {
-//        AccountOperation accountOperation = new AccountOperation();
-//        accountOperation.setOperationDate(new Date());
-//        accountOperation.setType(Math.random()>0.5?OperationType.DEBIT:OperationType.CREDIT);
-//        accountOperation.setAmount(Math.random()*1200);
-//        accountOperation.setBankAccount(bankAccount);
-//        operationRepository.save(accountOperation);
-//    }
-//});
 
 //            bankAccount bankaccount =
 //                    bankAccountRepository.findById("2032e19b-e77c-428a-90f1-3aad87be141c").get();
