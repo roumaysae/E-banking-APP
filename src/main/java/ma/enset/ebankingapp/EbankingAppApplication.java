@@ -36,7 +36,7 @@ public class EbankingAppApplication {
             });
             bankAccountService.listCustomers().forEach(customer -> {
                 bankAccountService.saveCurrentBankAccount(Math.random() * 1200, 12000, customer.getId());
-                bankAccountService.saveSavingBankAccount(Math.random() * 1000, 5.5, customer.getId());
+                bankAccountService.saveSavingBankAccount(Math.random() * 1900, 5.5, customer.getId());
                 bankAccountService.bankAcountsList().forEach(account ->{
                     for (int i = 0; i <10 ; i++) {
                         try {
